@@ -7,9 +7,11 @@ const startDateInput = document.querySelector('#start_date')
 const endDateLabel = document.querySelector('#end_date_label')
 const endDateInput = document.querySelector('#end_date')
 
+const footerYear = document.querySelector('#footer_year')
+
 const today = new Date()
 
-
+const year = today.getFullYear()
 
 
 
@@ -42,6 +44,6 @@ const setTodaysDate = () => {
 
 setTodaysDate();
 
-
+footerYear ? footerYear.innerHTML = year : ''
 
 
